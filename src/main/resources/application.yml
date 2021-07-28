@@ -1,0 +1,12 @@
+server:
+  port: 9409
+
+spring:
+  application:
+    name: apache-kafka-producer
+  cloud:
+    stream:
+      bindings:
+        uploadProducerEvent-out-0:
+          destination: producerEvent # topic name;
+          content-type: application/json
